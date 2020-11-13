@@ -7,7 +7,7 @@
     padding: 15px 32px;
 
     @include media("<tablet") {
-        padding: 15px 20px;
+        padding: 20px;
     }
 
     &__left,
@@ -53,8 +53,7 @@
     }
 
     &__logo {
-        // width: 32px;
-        // height: 32px;
+        transform: scale(2);
 
         svg {
             fill: $col-white;
@@ -66,7 +65,7 @@
         position: relative;
         width: 100%;
         max-width: 280px;
-        margin-left: 15px;
+        margin-left: 25px;
 
         input {
             color: $col-white;
