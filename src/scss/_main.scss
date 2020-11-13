@@ -69,10 +69,7 @@
         margin-left: 15px;
 
         input {
-
             color: $col-white;
-
-            &::focus {}
 
             &::placeholder {
                 color: rgba($col-white, .5);
