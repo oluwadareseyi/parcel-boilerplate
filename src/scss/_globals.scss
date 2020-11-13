@@ -121,7 +121,9 @@ $animationDuration: 1.6s;
 }
 
 .avatar {
-    margin-top: 50px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 3;
 
     &:empty {
         width: 100%;
