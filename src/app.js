@@ -204,5 +204,5 @@ const loadRepos = async () => {
   repos.innerHTML = html;
 };
 
-// loadRepos();
-// loadBio();
+loadRepos();
+loadBio();

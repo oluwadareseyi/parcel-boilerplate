@@ -119,3 +119,105 @@ $animationDuration: 1.6s;
     background-image: linear-gradient(90deg, $base-color 0px, $shine-color 40px, $base-color 80px);
     background-size: 600px;
 }
+
+.avatar {
+    margin-top: 50px;
+
+    &:empty {
+        width: 100%;
+        padding-top: 100%;
+        border-radius: 50%;
+        animation: shine-avatar $animationDuration infinite linear;
+        @include gradientBg();
+
+        @include media("<tablet") {
+            width: 140px;
+            height: 140px;
+            padding-top: 0;
+        }
+
+        @include media("<=380px") {
+            width: 100px;
+            height: 100px;
+            padding-top: 0;
+        }
+    }
+}
+
+.repos-skeleton {
+    margin-top: 55px;
+
+    .repo {
+        margin-bottom: 50px;
+
+        .title {
+            &:empty {
+                height: 16px;
+                border-radius: 7px;
+                max-width: 150px;
+                width: 100%;
+                animation: shine-lines $animationDuration infinite linear;
+                @include gradientBg();
+                margin-bottom: 30px;
+            }
+        }
+
+        .subs {
+            display: flex;
+        }
+
+        .sub {
+            margin-right: 10px;
+
+            &:empty {
+                height: 10px;
+                border-radius: 7px;
+                max-width: 100px;
+                width: 100%;
+                animation: shine-lines $animationDuration infinite linear;
+                @include gradientBg();
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.lines {
+    margin-top: 50px;
+
+    .line {
+        &:empty {
+            height: 16px;
+            border-radius: 7px;
+            max-width: 150px;
+            width: 100%;
+            animation: shine-lines $animationDuration infinite linear;
+            @include gradientBg();
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+@keyframes shine-lines {
+    0% {
+        background-position: -100px;
+    }
+
+    40%,
+    100% {
+        background-position: 140px;
+    }
+}
+
+@keyframes shine-avatar {
+    0% {
+        background-position: -32px;
+    }
+
+    40%,
+    100% {
+        background-position: 208px;
+    }
+}
