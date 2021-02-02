@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@octokit/graphql": "^4.5.7",
+    "gsap": "^3.6.0",
     "regenerator-runtime": "^0.13.7"
   }
 }
