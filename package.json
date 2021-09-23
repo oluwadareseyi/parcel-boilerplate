@@ -4,19 +4,17 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "dev": "rm -rf ./public && rm -rf ./.cache && parcel src/index.html -d public --open -p 3000",
+    "dev": "rm -rf .parcel-cache && parcel src/index.html --open -p 3000",
     "build": "parcel build src/index.html -d dist --public-url ./"
   },
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/runtime-corejs3": "^7.10.2",
-    "parcel-bundler": "^1.12.4",
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
     "sass": "^1.26.8"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.7"
+    "gsap": "^3.7.1"
   }
 }
