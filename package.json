@@ -4,14 +4,19 @@
   "main": "app.js",
   "license": "MIT",
   "scripts": {
-    "dev": "rm -rf .parcel-cache && parcel src/index.html --open -p 3000",
+    "dev": "rm -rf .parcel-cache && parcel src/index.html -p 3000",
     "build": "parcel build src/index.html -d dist --public-url ./"
   },
   "keywords": [],
   "author": "",
   "devDependencies": {
-    "@parcel/transformer-sass": "2.0.0-rc.0",
-    "parcel": "^2.0.0-rc.0",
+    "@parcel/config-default": "^2.0.0",
+    "@parcel/transformer-pug": "2.0.0",
+    "auto-bind": "^4.0.0",
+    "normalize-wheel": "^1.0.1",
+    "parcel": "^2.0.0",
+    "parcel-reporter-static-files-copy": "^1.3.0",
+    "prefix": "^1.0.0",
     "sass": "^1.26.8"
   },
   "dependencies": {
